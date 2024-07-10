@@ -1,0 +1,194 @@
+body {
+    font-family: "Roboto",sans-serif;
+    background-color: rgb(37, 36, 36);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(37, 36, 36);
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.sidebarIcon {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.heading {
+    display: flex;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.heading img {
+    margin-right: 10px;
+    margin-top: 30px;
+    
+}
+
+.heading p {
+    font-family: "Roboto",sans-serif;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 40px;
+}
+
+.sub-heading {
+    display: flex;
+    margin: 10px;
+}
+
+.sub-heading i {
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.sub-heading p {
+    font-family: "Roboto",sans-serif;
+    margin-top: 20px;
+}
+
+.today {
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.today p {
+    margin: 10px;
+    font-family: "Roboto",sans-serif;
+
+}
+
+.yesterday {
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.yesterday p {
+    margin: 10px;
+    font-family: "Roboto",sans-serif;
+
+}
+
+.previous {
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.previous p {
+    margin: 10px;
+    font-family: "Roboto",sans-serif;
+
+}
+
+.previous-1 {
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.previous-1 p {
+    margin: 10px;
+    font-family: "Roboto",sans-serif;
+
+}
+
+.chatContainer {
+    display: flex;
+}
+
+.mainHead {
+    display: flex;
+    margin: 20px;
+    font-family: "Roboto",sans-serif;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.mainHead i {
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 600px;
+    margin-left: 70px;
+    gap: 10px;
+    
+}
+
+.input-container input {
+   width: 600px;
+   height: 50px;
+   border-radius: 50px;
+   background-color: gray;
+   display: flex;
+   font-size: 20px;
+   padding: 10px;
+   color: black;
+   cursor: pointer;
+}
+
+.search input {
+    font-size: 20px;
+    padding: 10px;
+    
+}
+
+.input-container button {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    font-size: 35px;
+    aspect-ratio: 1;
+    right: 0;
+    top: 0;
+    background-color: rgb(49, 46, 46);
+    color: white;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+
+

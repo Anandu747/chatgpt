@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Toggle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <div class="container">
+    <div id="sidebar" class="sidebar">
+        <!-- Sidebar content -->
+        <div class="heading" id="side-content">
+            <img src="image/icons8-chatgpt-24 (1).png" alt="">
+            <p>ChatGPT</p>
+        </div>
+        <div class="sub-heading" id="side-content">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <p>Explore GPTs</p>
+        </div>
+         
+        <div class="today" id="side-content">
+            <p style="color: grey;">Today</p>
+            <p>Clown Website creation</p>
+        </div>
+        <div class="yesterday" id="side-content">
+            <p style="color: grey;">Yesterday</p>
+            <p>Clown Website creation</p>
+            <p>Learn JavaScript</p>
+        </div>
+        <div class="previous" id="side-content">
+            <p style="color: grey;">Previous days</p>
+            <p>Clown Website creation</p>
+            <p>Learn JavaScript</p>
+            <p>Learn Python</p>
+            <p>Learn Html Css</p>
+            <p>Learn React jS</p>
+        </div>
+
+        <div class="previous-1" id="side-content">
+            <p style="color: grey;">Previous 7 days</p>
+            <p>Clown Website creation</p>
+            <p>Learn JavaScript</p>
+            <p>Learn Python</p>
+        </div>
+
+    </div>
+    <button id="toggle-button" class="toggle-button"><i class="fa-solid fa-bars-progress"></i></button>
+     
+    <div class="chatContainer">
+        <div class="mainHead">
+            <h2 style="color: grey;">ChatGPT</h2>
+            <i style="color: grey;" class="fa-solid fa-chevron-down"></i>
+           </div>
+
+           <div class="input-container">
+            <input class="search" type="text" id="text" placeholder="Message ChatGPT">
+            <button><i class="fa-solid fa-circle-arrow-up"></i></button>
+           </div>
+    </div>
+
+</div>
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.getElementById('sidebar');
+    const toggleButton = document.getElementById('toggle-button');
+
+    toggleButton.addEventListener('click', function() {
+        sidebar.classList.toggle('open');
+    });
+});
+
+</script>
+</html>
